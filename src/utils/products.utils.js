@@ -7,6 +7,6 @@ export const getProducts = async () => {
         return response.data.products;
     } catch (error) {
         console.error('Error fetching data:', error);
-        return {}; // or handle the error appropriately
+        return []; // or handle the error appropriately
     }
 }
